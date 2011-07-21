@@ -1,0 +1,6 @@
+[
+    { "keys": ["ctrl+q"], "command": "wrap_lines" },
+    { "keys": ["ctrl+shift+'"], "command": "toggle_quotes" },
+    { "keys": ["ctrl+shift+d"], "command": "duplicate_line" },
+    { "keys": ["ctrl+super+q"], "command": "toggle_record_macro" }
+]
