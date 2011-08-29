@@ -3,5 +3,5 @@
     { "keys": ["ctrl+shift+'"], "command": "toggle_quotes" },
     { "keys": ["ctrl+shift+d"], "command": "duplicate_line" },
     { "keys": ["ctrl+super+q"], "command": "toggle_record_macro" },
-    { "keys": ["super+alt+f"], "command": "toggle_full_screen" }
+    { "keys": ["ctrl+alt+super+m"], "command": "monetate" }
 ]
