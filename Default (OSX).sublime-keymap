@@ -3,5 +3,8 @@
     { "keys": ["ctrl+shift+'"], "command": "toggle_quotes" },
     { "keys": ["ctrl+shift+d"], "command": "duplicate_line" },
     { "keys": ["ctrl+super+q"], "command": "toggle_record_macro" },
-    { "keys": ["ctrl+alt+super+m"], "command": "monetate" }
+    { "keys": ["ctrl+alt+super+m"], "command": "monetate" },
+    { "keys": ["ctrl+alt+super+g"], "command": "git" },
+    { "keys": ["ctrl+alt+super+r"], "command": "show_build_results" },
+    { "keys": ["ctrl+s"], "command": "toggle_side_bar" }
 ]
