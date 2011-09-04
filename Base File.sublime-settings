@@ -1,16 +1,13 @@
 {
 	"caret_style": "smooth",
-	"color_scheme": "Packages/Color Scheme - Default/Pastels on Dark.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"detect_indentation": false,
 	"draw_minimap_border": true,
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Consolas",
 	"font_size": 15,
 	"highlight_line": true,
-	"rulers":
-	[
-		78
-	],
+	"rulers": [78],
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
