@@ -6,5 +6,21 @@
     { "keys": ["ctrl+alt+super+m"], "command": "monetate" },
     { "keys": ["ctrl+alt+super+g"], "command": "git" },
     { "keys": ["ctrl+alt+super+r"], "command": "show_build_results" },
-    { "keys": ["ctrl+s"], "command": "toggle_side_bar" }
+    { "keys": ["ctrl+s"], "command": "toggle_side_bar" },
+
+    // JavaScipt block comment '*' helper
+    {
+        "keys": ["enter"],
+        "command": "insert_snippet",
+        "args": {
+            "contents": "\n* $0"
+        },
+        "context": [
+            {
+                "key": "preceding_text",
+                "operator": "regex_match",
+                "operand": "^ \\*.*"
+            }
+        ]
+    }
 ]
