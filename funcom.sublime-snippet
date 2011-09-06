@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+/**
+ * ${1:$TM_SELECTED_TEXT}
+ */
+]]></content>
+    <tabTrigger>funcom</tabTrigger>
+    <scope>source.js</scope>
+    <description>Comment a Function</description>
+</snippet>
