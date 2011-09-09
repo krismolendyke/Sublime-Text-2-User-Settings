@@ -4,7 +4,7 @@
  * ${1:$TM_SELECTED_TEXT}
  */
 ]]></content>
-    <tabTrigger>funcom</tabTrigger>
+    <tabTrigger>/**</tabTrigger>
     <scope>source.js</scope>
     <description>Comment a Function</description>
 </snippet>
