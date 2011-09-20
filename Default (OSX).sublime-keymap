@@ -6,13 +6,37 @@
     { "keys": ["ctrl+alt+super+m"], "command": "monetate" },
     { "keys": ["ctrl+alt+super+g"], "command": "git" },
     { "keys": ["ctrl+s"], "command": "toggle_side_bar" },
+
+    // Insert a timestamp.
+    {
+        "keys": ["t", "s", "tab"],
+        "command": "add_time_stamp",
+        "args": {
+            "contents": "$$%d-%m-%Y %H:%M:%S$$ "
+        }
+    },
+
+    // Insert a Markdown formatted link with the contents of the clipboard.
+    {
+        "keys": ["[", "]", "tab"],
+        "command": "markdown_link",
+        "context": [
+            {
+                "key": "selector",
+                "operator": "equal",
+                "operand": "text.html.markdown"
+            }
+        ]
+    },
+
+    // Show Build Results
     {
         "keys": ["ctrl+alt+super+r"],
         "command": "show_panel",
         "args": {"panel": "output.exec"}
     },
 
-    // JavaScipt block comment '*' helper
+    // JavaScipt block comment '*' helper.
     {
         "keys": ["enter"],
         "command": "insert_snippet",
