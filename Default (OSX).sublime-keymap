@@ -7,15 +7,6 @@
     { "keys": ["ctrl+alt+super+g"], "command": "git" },
     { "keys": ["ctrl+s"], "command": "toggle_side_bar" },
 
-    // Insert a timestamp.
-    {
-        "keys": ["t", "s", "tab"],
-        "command": "add_time_stamp",
-        "args": {
-            "contents": "$$%d-%m-%Y %H:%M:%S$$ "
-        }
-    },
-
     // Insert a Markdown formatted link with the contents of the clipboard.
     {
         "keys": ["[", "]", "tab"],
