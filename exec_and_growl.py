@@ -24,7 +24,8 @@ class ExecAndGrowlCommand(sublime_plugin.WindowCommand,
     """
 
     def run(self, cmd = [], file_regex = "", line_regex = "", working_dir = "",
-            encoding = "utf-8", env = {}, quiet = False, kill = False,
+            encoding = "utf-8", env = {}, show_output = False, quiet = False,
+            kill = False,
             # Catches "path" and "shell"
             **kwargs):
 
@@ -72,7 +73,8 @@ class ExecAndGrowlCommand(sublime_plugin.WindowCommand,
         if not self.quiet:
             print "Running " + " ".join(cmd)
 
-        self.window.run_command("show_panel", {"panel": "output.exec"})
+        if show_output:
+            self.window.run_command("show_panel", {"panel": "output.exec"})
 
         merged_env = env.copy()
         if self.window.active_view():
