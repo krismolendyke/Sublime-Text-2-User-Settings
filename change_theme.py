@@ -18,8 +18,6 @@ class ChangeThemeCommand(sublime_plugin.WindowCommand):
             "value": ChangeThemeCommand.themes[index]["theme"]
         })
 
-        print ChangeThemeCommand.themes[index]
-
     themes = [
         {
             "quick_panel": ["Light",
@@ -34,6 +32,13 @@ class ChangeThemeCommand(sublime_plugin.WindowCommand):
                             "Theme: Soda Dark"],
             "color_scheme": "Monokai.tmTheme",
             "theme": "Soda Dark.sublime-theme"
+        },
+        {
+            "quick_panel": ["Default",
+                            "Color Scheme: Monokai",
+                            "Theme: Default"],
+            "color_scheme": "Monokai.tmTheme",
+            "theme": "Default.sublime-theme"
         }
     ]
 
