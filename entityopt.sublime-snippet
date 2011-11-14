@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+&#x2325;
+]]></content>
+    <tabTrigger>OPT</tabTrigger>
+    <scope>text.html</scope>
+</snippet>
