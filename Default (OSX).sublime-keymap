@@ -21,6 +21,19 @@
         ]
     },
 
+    // Format JSON files.
+    {
+        "keys": ["ctrl+alt+super+f"],
+        "command": "format_json",
+        "context": [
+            {
+                "key": "selector",
+                "operator": "equal",
+                "operand": "source.json"
+            }
+        ]
+    },
+
     // Show Build Results
     {
         "keys": ["ctrl+alt+super+r"],
