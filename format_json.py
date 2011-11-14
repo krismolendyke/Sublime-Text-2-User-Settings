@@ -18,5 +18,6 @@ class FormatJsonCommand(sublime_plugin.TextCommand):
                 except ValueError as e:
                     sublime.error_message(str(e))
                 else:
-                    json_string = json.dumps(json_object, indent=4)
+                    json_string = json.dumps(json_object, indent=4,
+                                             sort_keys=True)
                     view.replace(edit, selection, json_string)
