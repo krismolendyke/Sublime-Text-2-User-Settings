@@ -1,5 +1,6 @@
 import sublime, sublime_plugin
 import json
+import decimal
 
 class FormatJsonCommand(sublime_plugin.TextCommand):
     """
@@ -29,7 +30,8 @@ class FormatJsonCommand(sublime_plugin.TextCommand):
             # Only try to format selections that appear to be JSON.
             if view.score_selector(selection.a, "source.json"):
                 try:
-                    self.json_object = json.loads(view.substr(self.selection))
+                    self.json_object = json.loads(view.substr(self.selection),
+                                                  parse_float=decimal.Decimal)
                 except ValueError as e:
                     sublime.error_message(str(e))
                 else:
