@@ -6,14 +6,14 @@ class ChangeThemeCommand(sublime_plugin.WindowCommand):
             return
 
         self.window.run_command("set_user_setting", {
-            "file": "Base File.sublime-settings",
+            "file": "Preferences.sublime-settings",
             "setting": "color_scheme",
             "value": "Packages/Color Scheme - Default/%s" % (
                 ChangeThemeCommand.themes[index]["color_scheme"])
         })
 
         self.window.run_command("set_user_setting", {
-            "file": "Global.sublime-settings",
+            "file": "Preferences.sublime-settings",
             "setting": "theme",
             "value": ChangeThemeCommand.themes[index]["theme"]
         })
