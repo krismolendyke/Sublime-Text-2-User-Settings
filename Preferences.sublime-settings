@@ -15,9 +15,13 @@
 		".sass-cache"
 	],
 	"font_face": "Consolas",
-	"font_size": 19.0,
+	"font_size": 18.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
+	"indent_guide_options":
+	[
+		"draw_active"
+	],
 	"rulers":
 	[
 		78
