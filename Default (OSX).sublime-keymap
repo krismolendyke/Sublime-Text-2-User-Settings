@@ -12,6 +12,26 @@
     { "keys": ["super+k", "super+s"], "command": "swap_case" },
     { "keys": ["super+m", "super+m"], "command": "toggle_minimap" },
 
+    // Enable wrapping selection in `, like ' or "
+    {
+        "keys": ["`"],
+        "command": "insert_snippet",
+        "args": {"contents": "`${0:$SELECTION}`"},
+        "context":
+            [
+                {
+                    "key": "setting.auto_match_enabled",
+                    "operator": "equal", "operand": true
+                },
+                {
+                    "key": "selection_empty",
+                    "operator": "equal",
+                    "operand": false,
+                    "match_all": true
+                }
+            ]
+    },
+
     // Insert a Markdown formatted link with the contents of the clipboard.
     {
         "keys": ["[", "]", "tab"],
