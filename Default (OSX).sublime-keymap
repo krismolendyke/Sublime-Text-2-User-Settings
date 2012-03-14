@@ -1,6 +1,4 @@
 [
-    { "keys": ["ctrl+alt+super+g"], "command": "git" },
-    { "keys": ["ctrl+alt+super+m"], "command": "monetate" },
     { "keys": ["ctrl+alt+super+t"], "command": "change_theme" },
     { "keys": ["ctrl+q"], "command": "wrap_lines" },
     { "keys": ["ctrl+s"], "command": "toggle_side_bar" },
