@@ -23,9 +23,9 @@ class ExecAndGrowlCommand(sublime_plugin.WindowCommand,
     module to that version they will not be available.
     """
 
-    def run(self, cmd = [], file_regex = "", line_regex = "", working_dir = "",
-            encoding = "utf-8", env = {}, show_output = False, quiet = False,
-            kill = False,
+    def run(self, cmd=[], file_regex="", line_regex="", working_dir="",
+            encoding="utf-8", env={}, show_output=False, quiet=False,
+            kill=False,
             # Catches "path" and "shell"
             **kwargs):
 
@@ -72,6 +72,7 @@ class ExecAndGrowlCommand(sublime_plugin.WindowCommand,
         self.proc = None
         if not self.quiet:
             print "Running " + " ".join(cmd)
+            self.growl(cmd[0], description=" ".join(cmd[1:]))
 
         if show_output:
             self.window.run_command("show_panel", {"panel": "output.exec"})
@@ -100,9 +101,9 @@ class ExecAndGrowlCommand(sublime_plugin.WindowCommand,
             if not self.quiet:
                 self.append_data(None, "[Finished]")
 
-    def is_enabled(self, kill = False):
+    def is_enabled(self, kill=False):
         if kill:
-            return hasattr(self, 'proc') and self.proc and self.proc.poll()
+            return hasattr(self, "proc") and self.proc and self.proc.poll()
         else:
             return True
 
@@ -141,8 +142,8 @@ class ExecAndGrowlCommand(sublime_plugin.WindowCommand,
         self.output_view.end_edit(edit)
         self.output_view.set_read_only(True)
 
-    def growl(self, title = "Finished", description = "Execution complete.",
-              sticky = False):
+    def growl(self, title="Finished", description="Execution complete.",
+              sticky=False):
         self.growlNotifier.notify(self.growlNotification, title, description,
                                   sticky = sticky)
 
