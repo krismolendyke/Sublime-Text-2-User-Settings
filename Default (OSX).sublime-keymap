@@ -9,6 +9,7 @@
     { "keys": ["super+k", "super+t"], "command": "title_case" },
     { "keys": ["super+k", "super+s"], "command": "swap_case" },
     { "keys": ["super+m", "super+m"], "command": "toggle_minimap" },
+    { "keys": ["ctrl+super+w"], "command": "close_all" },
 
     // Enable wrapping selection in `, like ' or "
     {
