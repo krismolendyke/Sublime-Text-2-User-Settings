@@ -15,6 +15,10 @@
 		".sass-cache"
 	],
 	"font_face": "Consolas",
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
 	"font_size": 18.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
@@ -26,6 +30,7 @@
 	[
 		78
 	],
+	"scroll_past_end": true,
 	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
