@@ -1,0 +1,4 @@
+{
+    "cmd": ["/usr/bin/env", "sh", "${file_name}"],
+    "selector": "source.shell"
+}
